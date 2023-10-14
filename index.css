@@ -136,14 +136,13 @@ nav ul li:hover {
 	aside {
 		display: none;
 	}
-}
 @media (max-width: 970px) {
 	main {
 		flex-direction: column;	
 		padding: 0 30px;
 	}
 	nav {
-		flex: 0 1 70px;
+		flex: 1 1 70px;
 		margin: 0 auto;
 	}
 	content {
@@ -152,7 +151,10 @@ nav ul li:hover {
 	}
 	nav ul {
 		display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+		justify-content: space-evenly;
+		box-sizing: border-box;
+		padding: 0 20px;
 	}
 }
