@@ -136,6 +136,7 @@ nav ul li:hover {
 	aside {
 		display: none;
 	}
+}
 @media (max-width: 970px) {
 	main {
 		flex-direction: column;	
