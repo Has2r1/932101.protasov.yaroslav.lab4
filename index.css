@@ -1,0 +1,158 @@
+html {
+	height: 100%;
+	min-width: 530px;
+}
+body {
+	margin: 0;
+	height: 100%;
+	min-width: 530px;
+}
+header {
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	top: 0;
+	background-color: #507299;
+	padding: 10px;
+	box-sizing: border-box;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+}
+header img {
+	flex: 0 1 5%;
+	margin-left: 20%;
+}
+footer {
+	width: 100%;
+	height: 3%;
+	position: relative;
+	bottom: -20px;
+	background-color: white;
+	padding: 5px;
+	box-sizing: border-box;
+	color: grey;
+	text-align: center;
+	font-size: 1.1em;
+	margin-top: 20px;
+}
+main {
+	width: 100%;
+	min-height: 92%;
+	position: relative;
+	top: 5%;
+	background-color: #edeef0;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	box-sizing: border-box;
+}
+nav {
+	flex: 0 0 250px;
+	margin-right: 20px;
+}
+nav ul {
+	color:  #507299;
+	list-style: none;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+nav ul li {
+	padding: 5px;
+}
+content {
+	flex: 0 1 500px;
+	margin-right: 20%;
+}
+.content_block {
+	background-color: white;
+	border-radius: 15px;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.content_block p {
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.content_block p::selection {
+	color: green;
+	background-color: #e1e5eb;
+}
+.actions_block {
+	width: 95%;
+	margin: 0 auto;
+	border-top: 2px solid #d0d0d0;
+	padding: 10px 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.actions_block a {
+	color: #2e5473;
+	text-decoration: none;
+}
+aside {
+	width: 150px;
+	position: fixed;
+	right: 25%;
+	font-size: 1.1em;
+}
+.aside_block {
+	background-color: white;
+	padding: 7px 15px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.aside_block p {
+	background-color: #e1e5eb;
+}
+.aside_block h4 {
+	font-size: 1.15em;
+}
+.img_block {
+	width: 95%;
+	height: 40vh;
+	background-image: url("cat.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 10px auto;
+}
+.content_block_header {
+	width: 100%;
+	margin: 0;
+	padding: 7px 20px;
+	box-sizing: border-box;
+}
+hr {
+	border: 2px solid #edeef0;
+}
+nav ul li:hover {
+	background-color: #e1e5eb;
+}
+@media (max-width: 1600px) {
+	aside {
+		display: none;
+	}
+}
+@media (max-width: 970px) {
+	main {
+		flex-direction: column;	
+		padding: 0 30px;
+	}
+	nav {
+		flex: 0 1 70px;
+		margin: 0 auto;
+	}
+	content {
+		margin: 0 auto;
+		max-width: 500px;
+	}
+	nav ul {
+		display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+	}
+}
